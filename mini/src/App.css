@@ -1,0 +1,204 @@
+body {
+  background: #f4f6fb;
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #2196f3;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.error {
+  background: #ffebee;
+  color: #c62828;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.note-form {
+  background: #fff;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  margin-bottom: 2rem;
+}
+
+.note-form input,
+.note-form textarea {
+  width: 95%;
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cfd8dc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f7fafc;
+  color: #222;
+}
+
+.note-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.note-form button {
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: background 0.2s;
+  box-shadow: 0 1px 4px rgba(33,150,243,0.08);
+}
+
+.note-form button:hover {
+  background: #1769aa;
+}
+
+.loading {
+  text-align: center;
+  color: #607d8b;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.notes-wall {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.note-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.note-content {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.note-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #607d8b;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.note-actions {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.note-actions button {
+  background: #f4f6fb;
+  color: #2196f3;
+  border: 1px solid #cfd8dc;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.note-actions button:hover {
+  background: #e3f2fd;
+  color: #1769aa;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  background: #2196f3;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.pagination button:disabled {
+  background: #cfd8dc;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  color: #607d8b;
+  font-size: 1.05rem;
+}
